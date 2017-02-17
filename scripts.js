@@ -9,7 +9,8 @@ window.addEventListener("load", function (e){
 		querystring = "valueX=" + clickcoordinates[0] 
 					+ "&valueY=" + clickcoordinates[1] 
 					+ "&time=" + currenttimer.replace(/ /g, "");
-		makeRequest('GET','/check?'+querystring, function(result){
+		makeRequest('GET','check.php?'+querystring, function(result){
+			debugger;
 			showresult(result);
 		});
 
