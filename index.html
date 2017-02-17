@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="scripts.js"></script>
+	<script type="text/javascript" src="functions.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
+	<title>Where's Waldo?</title>
+</head>
+<body>
+	<h1>Where's Waldo?</h1>
+	<h2>Click on Waldo in the image below</h2>
+	<img src="waldo.jpg">
+	<div class="timer">0 min 0 sec</div>
+	<div class="showtimes">Show Best Times</div>
+
+	<div class="modal_container" style="display:none">
+		<div class="modal"></div>
+		<div class="modalwindow">
+			<div class="modalclose">X</div>
+			<h3 class="message">You found Waldo!</h3>
+			<h4 class="messagetime">time</h4>
+			<form>
+				<label>Input your name</label>
+				<input type="text" name="name">
+				<input type="submit" class="submitbutton">
+			</form>
+		</div>
+	</div>
+
+	<div class="besttimes_container" style="display:none">
+		<div class="modal_besttimes"></div>
+		<div class="modalwindow_besttimes">
+			<div class="modalclose">X</div>
+			<h3 class="besttimes_title">Here are the best times for this image:</h3>
+			<h4 class="besttimes"></h4>
+		</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+/*font-family: 'Pangolin', cursive;*/
+
+body {
+	/*background-color: grey;*/
+  font-family: 'Pangolin', cursive;
+  background: repeating-linear-gradient(
+    45deg,
+    red,
+    red 25px,
+    white 25px,
+    white 50px
+  );
+}
+
+h2{
+	text-align: center;
+  padding:0;
+  margin:0;
+}
+h1{
+  text-align: center;
+  font-size: 45pt;
+  padding:0;
+  margin: 0;
+}
+
+img {
+	display: block;
+	margin: auto;
+	width: 80%;
+	border: 5px solid black;
+}
+
+.modal{
+  background: rgba(0,0,0,0.5);
+  position: fixed;
+  z-index: 9998;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+.modalwindow {
+  width: 500px;
+  height: 400px;
+  position: fixed;
+  z-index: 9999;
+  left: 50%;
+  top: 50%;
+  margin-left: -250px;
+  margin-top: -200px;
+  background: #fff;
+  border: 2px solid black;
+  padding: 30px;
+}
+
+.message {
+	text-align: center;
+	font-size: 40pt;
+}
+
+.messagetime {
+	text-align: center;
+	font-size: 30pt;
+}
+
+.modalclose {
+  float: right;
+  right: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid #000;
+  padding: 1px 3px;
+}
+
+
+.timer {
+  background-color: #a8d0ee;
+  position:fixed;
+  top: 3%;
+  right: 3%;
+  border: 2px solid #000;
+  font-size: 20pt;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.modal_besttimes{
+  background: rgba(0,0,0,0.5);
+  position: fixed;
+  z-index: 9998;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+.modalwindow_besttimes {
+  width: 500px;
+  height: 400px;
+  position: fixed;
+  z-index: 9999;
+  left: 50%;
+  top: 50%;
+  margin-left: -250px;
+  margin-top: -200px;
+  background: #fff;
+  border: 2px solid black;
+  padding: 30px;
+}
+
+.showtimes {
+  position:fixed;
+  top: 3%;
+  left: 3%;
+  border: 2px solid #000;
+  font-size: 20pt;
+  padding: 5px;
+  background-color: #a8d0ee;
+  border-radius: 5px;
+}
