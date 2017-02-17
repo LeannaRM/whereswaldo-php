@@ -10,7 +10,6 @@ window.addEventListener("load", function (e){
 					+ "&valueY=" + clickcoordinates[1] 
 					+ "&time=" + currenttimer.replace(/ /g, "");
 		makeRequest('GET','check.php?'+querystring, function(result){
-			debugger;
 			showresult(result);
 		});
 
@@ -83,7 +82,7 @@ window.addEventListener("load", function (e){
 	}
 
 	function getsavedtimes() {
-		makeRequest('GET','/getsaved', function(data){
+		makeRequest('GET','getsaved.php', function(data){
 			jsondata = JSON.parse(data)
 			for (var i=0;i<jsondata.length; i++) {
 				time = jsondata[i]["time"]
@@ -101,7 +100,9 @@ window.addEventListener("load", function (e){
 		name = e.target.previousElementSibling.value
 		time = currenttimer.replace(/ /g, "-");
 		querystring = "name=" + name + "&time=" + time;
-		makeRequest('POST','/savetime?'+querystring);
+		makeRequest('GET','savetime.php?'+querystring);
+
+		e.preventDefault();
 	}
 
 });
